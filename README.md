@@ -1,2 +1,2 @@
 # Forecatsing-with-memory
- prediction of stock and option prices using different ML methods
+ prediction of stock prices using different methods (ML, Monte Carlo, SARIMA etc)
