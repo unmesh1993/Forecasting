@@ -11,17 +11,8 @@
  2. Using Markov Chain Monte Carlo, the bayesian posterior of these prior parameter distribution are samples (For merton : still under process).  
 
 **Data**
- The data used is from yfinance : downlaaded and read in the notebook. 
- Modifying the following section directly fetcheds the data from the yfinance server :
-
-   !! Comment out !!      
-         # Read CSV and parse the 'Date' column as datetime
-        self.df = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/IBN_stock_data.csv', parse_dates=['Date'])
-        # Set 'Date' as the index
-        self.df.set_index('Date', inplace=True)
-        self.df = self.df[self.df.index >= '2016-01-01']
-  !! -- !!
-  And USE:
+ The data used is from yfinance : downladed and read in the notebook. 
+ Else USE:
         ''' yfinance
         self.df = yf.download(self.ticker, start=self.start, end=self.end)
         '''
